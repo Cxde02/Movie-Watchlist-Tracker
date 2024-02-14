@@ -30,8 +30,7 @@ conn = sqlite3.connect('db/moviesWatchlist.db')
 cursor = conn.cursor()
 
 # Create a table called Movies
-cursor.execute('''CREATE TABLE IF NOT EXISTS Movies
-               (Title TEXT, Genre TEXT, Date DATE, Ratings INTEGER)''')
+cursor.execute("CREATE TABLE IF NOT EXISTS Movies (Title TEXT, Genre TEXT, Date DATE, Ratings INTEGER)")
 
 '''
 # Insert 4 rows into the Movies table
