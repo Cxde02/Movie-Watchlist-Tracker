@@ -14,6 +14,7 @@ print("|        Movie Watchlist        |")
 print("+-------------------------------+")
 
 
+###Function for displaying all rows
 def readAll ():
  # Connect to the database
  conn = sqlite3.connect('db/moviesWatchlist.db')
@@ -56,7 +57,7 @@ def readAll ():
  # Close the connection
  conn.close()
 
-
+###Function for constraints
 def readConstraint():
  # Connect to the database
  conn = sqlite3.connect('db/moviesWatchlist.db')
@@ -99,6 +100,7 @@ def readConstraint():
  # Close the connection
  conn.close()
 
+###Function for deleting rows
 def deleteRow():
  # Connect to the database
  conn = sqlite3.connect('db/moviesWatchlist.db')
